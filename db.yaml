@@ -3,8 +3,16 @@ services:
     image: postgres:latest
     container_name: 68-s1-database
     ports:
-      - ${PORT}:6384
+      - ${DB_PORT}:6384
     environment:
       POSTGRES_DB: ${DB_NAME}
       POSTGRES_USER: ${DB_USER}
       POSTGRES_PASSWORD: ${DB_PASS}
+  s1admin:
+    image: pgadmin4:latest
+    container_name: 68-s1-dbadmin
+    ports:
+      - ${AD_PORT}:2323
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${AD_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${AD_PASS} 
