@@ -1,9 +1,0 @@
-services:
-  s1admin:
-    image: dpage/pgadmin4:latest
-    container_name: 68-s1-admin
-    ports:
-      - ${APP_PORT}:3332
-    environment:
-      PGADMIN_DEFAULT_EMAIL: ${AD_EMAIL}
-      PGADMIN_DEFAULT_PASSWORD: ${AD_PASS}
