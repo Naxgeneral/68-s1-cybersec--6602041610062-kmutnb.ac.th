@@ -3,4 +3,4 @@ services:
     image: prawee/strapi:latest
     container_name: 68-s1-app
     ports:
-      - ${APP_PORT}:2323
+    - ${APP_PORT}:2323
