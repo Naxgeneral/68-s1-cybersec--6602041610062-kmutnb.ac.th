@@ -16,15 +16,3 @@ cp env.simple .env
 docker compose -f db.yaml up # monitoring
 docker compose -f db.yaml up -d # background
 ```
-
-### PG ADMIN 4
-```sh
-docker compose -f admin.yaml up # monitoring
-docker compose -f admin.yaml up -d # background
-```
-
-### APP
-```sh
-docker compose -f app.yaml up # monitoring
-docker compose -f app.yaml up -d # background
-```
