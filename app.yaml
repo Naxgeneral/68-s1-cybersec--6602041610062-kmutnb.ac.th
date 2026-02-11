@@ -1,9 +1,0 @@
-services:
-  s1app:
-    image: prawee/strapi:latest
-    container_name: 68-s1-app
-    ports:
-      - ${AD_PORT}:2323
-    environment:
-      PGADMIN_DEFAULT_EMAIL: ${AD_EMAIL}
-      PGADMIN_DEFAULT_PASSWORD: ${AD_PASS}
