@@ -8,6 +8,6 @@ services:
       DATABASE_CLIENT: postgres
       DATABASE_NAME: "${DB_NAME}"
       DATABASE_HOST: s1db
-      DATABASE_PORT: 6384
+      DATABASE_PORT: 5432
       DATABASE_USERNAME: "${DB_USER}"
       DATABASE_PASSWORD: "${DB_PASS}"
